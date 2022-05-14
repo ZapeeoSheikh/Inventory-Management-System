@@ -13,5 +13,38 @@ namespace Inventory_Management_System.Controllers
         {
             return View();
         }
+        public ActionResult ItemImages()
+        {
+            return View();
+        }
+        public ActionResult Items()
+        {
+            return View();
+        }
+        public ActionResult OrderHistory()
+        {
+            return View();
+        }
+        public ActionResult Order()
+        {
+            return View();
+        }
+        public ActionResult OrderStatus()
+        {
+            return View();
+        }
+        public ActionResult ProductStatus()
+        {
+            return View();
+        }
+        public ActionResult Role()
+        {
+            return View();
+        }
+        public ActionResult User()
+        {
+            return View();
+        }
+
     }
 }
