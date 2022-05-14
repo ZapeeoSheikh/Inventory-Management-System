@@ -18,6 +18,18 @@
             background-color: #FFffff;
             color: yellow;
         }
+
+        #sidebar li {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-decoration: none;
+        }
+
+            #sidebar li a {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                color: red;
+            }
     </style>
 </head>
 <body>
@@ -45,12 +57,20 @@
             </div>
         </div>
     </nav>
-    <div class="col-lg-2" style="background-color:cadetblue">
+    <div id="sidebar" class="col-lg-2" style="background-color: #F8F8F8; color: red; ">
+        <ul>
 
-        <p>xxjhcbjzhxbcjhzbxcjhbzjhxcbjhzxbcjhzbxjhcbzjhxbcjhzbxchiashdMN cciuasidjahsdjajh s asdhahsb asdb jhbxiuch ziuas jhbiuzxccnb igd SAMN JBAS HHABSD H hhbas djb biasdj hbaisd ASHBI</p>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shopping Area</a></li>
+            <li><a href="#">Credit Center </a></li>
+            <li><a href="#">My Cart </a></li>
+            <li><a href="#">History </a></li>
+            <li><a href="#">About us </a></li>
+
+        </ul>
     </div>
     @* RenderBody Portion *@
-    <div class="container-fluid col-lg-push-2 col-lg-10" style="margin: 10px">
+    <div class="container-fluid col-lg-push-2" style="margin: 10px">
 
 
         @RenderBody()
