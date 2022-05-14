@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
     <style>
         .navbar-fixed-top .navbar-nav > li > a:hover, .navbar-fixed-top .navbar-nav > li > a:focus {
@@ -14,22 +26,36 @@
             color: #FFffff;
         }
 
-        navbar-fixed-bottom div .navbar-nav > li > a:hover, navbar-fixed-bottom div .navbar-nav > li > a:focus {
-            background-color: #FFffff;
-            color: yellow;
+        #sidebar .dropdown-menu > li > a:hover, #sidebar .dropdown-menu > li > a:focus {
+            background-color: red;
+            color: #FFffff;
         }
 
+
         #sidebar li {
-            margin-top: 50px;
             margin-bottom: 50px;
             text-decoration: none;
         }
 
             #sidebar li a {
-                margin-top: 50px;
-                margin-bottom: 50px;
+                margin-bottom: 25px;
                 color: red;
                 size: 120px;
+                letter-spacing: 2px;
+                text-decoration: none;
+            }
+
+                #sidebar li a:hover, #sidebar li a:focus {
+                    border-bottom: 4px solid red;
+                }
+
+        #sidebar .dropdown-menu {
+            border: 5px solid red;
+        }
+
+            #sidebar .dropdown-menu li {
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
     </style>
 </head>
@@ -58,24 +84,47 @@
             </div>
         </div>
     </nav>
-    <div id="sidebar" class="col-lg-2" style="background-color: #F8F8F8; color: red; ">
+    @* Side Bar *@
+    <div id="sidebar" class="col-lg-2 navbar-fixed-top" style="background-color: #F8F8F8; color: red;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="color: red; font-weight: bold; margin: 10px; letter-spacing: 5px">Inventrii Safe</a>
+        </div>
         <ul>
 
-            <li><a href="#">Dashboard</a></li>
+            <li style="margin-top: 100px"><a href="#">Dashboard</a></li>
             <li><a href="#">Products</a></li>
-            <li><a href="#">Credit Center </a></li>
+            <li><a href="#">Products Images </a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Other Pages
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="active" style="background-color: red; color: #f8f8f8; margin-top: 0px; ">- Select one option - </a></li>
+                    <li><a href="#">User Detail</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Table</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Peoples
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="active" style="background-color: red; color: #f8f8f8; margin-top: 0px;">- Select one option - </a></li>
+                    <li><a href="#">Customer</a></li>
+                    <li><a href="#">Seller</a></li>
+                </ul>
+            </li>
             <li><a href="#">My Cart </a></li>
+            <li><a href="#">Returns </a></li>
             <li><a href="#">History </a></li>
-            <li><a href="#">About us </a></li>
-            <li><a href="#">About us </a></li>
-            <li><a href="#">About us </a></li>
 
         </ul>
     </div>
     @* RenderBody Portion *@
     <div class="container-fluid col-lg-push-2" style="margin: 10px">
-
-
         @RenderBody()
     </div>
     @* Footer Portion *@
