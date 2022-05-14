@@ -21,6 +21,8 @@
     </style>
 </head>
 <body>
+
+    @* Navigation Bar *@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="container-fluid">
@@ -43,9 +45,17 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" style="margin: 10px">
+    <div class="col-lg-2" style="background-color:cadetblue">
+
+        <p>xxjhcbjzhxbcjhzbxcjhbzjhxcbjhzxbcjhzbxjhcbzjhxbcjhzbxchiashdMN cciuasidjahsdjajh s asdhahsb asdb jhbxiuch ziuas jhbiuzxccnb igd SAMN JBAS HHABSD H hhbas djb biasdj hbaisd ASHBI</p>
+    </div>
+    @* RenderBody Portion *@
+    <div class="container-fluid col-lg-push-2 col-lg-10" style="margin: 10px">
+
+
         @RenderBody()
     </div>
+    @* Footer Portion *@
     <footer>
         <nav class="navbar navbar-fixed-bottom">
             <div style="background-color: red; width: auto; height: 80px;">
@@ -60,7 +70,6 @@
                 </ul>
             </div>
         </nav>
-
     </footer>
 
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>

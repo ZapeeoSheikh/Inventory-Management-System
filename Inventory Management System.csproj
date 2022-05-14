@@ -141,6 +141,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Home\OrderHistory.cshtml" />
+    <Content Include="Views\Home\View.cshtml" />
+    <Content Include="Views\Home\Role.cshtml" />
+    <Content Include="Views\Home\User.cshtml" />
+    <Content Include="Views\Home\ItemImages.cshtml" />
+    <Content Include="Views\Home\Items.cshtml" />
+    <Content Include="Views\Home\Order.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
