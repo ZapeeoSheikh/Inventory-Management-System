@@ -35,3 +35,19 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+.btm div ul li a {
+    color: white
+}
+
+    .btm div ul li a:hover, .btm div ul li a:focus {
+        color: red
+    }
+
+.navbar .navbar-nav li a {
+    color: red
+}
+
+.tp li a:hover, .tp li a:focus {
+    color: red
+}
