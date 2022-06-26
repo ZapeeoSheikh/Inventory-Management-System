@@ -1,0 +1,37 @@
+﻿
+.navbar-fixed-top .navbar-nav > li > a:hover, .navbar-fixed-top .navbar-nav > li > a:focus {
+    background-color: red;
+    color: #FFffff;
+}
+
+#sidebar .dropdown-menu > li > a:hover, #sidebar .dropdown-menu > li > a:focus {
+    background-color: red;
+    color: #FFffff;
+}
+
+
+#sidebar li {
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+    #sidebar li a {
+        margin-bottom: 25px;
+        color: red;
+        size: 120px;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+
+        #sidebar li a:hover, #sidebar li a:focus {
+            border-bottom: 4px solid red;
+        }
+
+#sidebar .dropdown-menu {
+    border: 5px solid red;
+}
+
+    #sidebar .dropdown-menu li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }

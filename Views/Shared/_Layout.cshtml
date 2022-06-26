@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-
+    <link href="~/Style.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
@@ -24,44 +24,7 @@
     @*Icons Link*@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <style>
-        .navbar-fixed-top .navbar-nav > li > a:hover, .navbar-fixed-top .navbar-nav > li > a:focus {
-            background-color: red;
-            color: #FFffff;
-        }
-
-        #sidebar .dropdown-menu > li > a:hover, #sidebar .dropdown-menu > li > a:focus {
-            background-color: red;
-            color: #FFffff;
-        }
-
-
-        #sidebar li {
-            margin-bottom: 50px;
-            text-decoration: none;
-        }
-
-            #sidebar li a {
-                margin-bottom: 25px;
-                color: red;
-                size: 120px;
-                letter-spacing: 2px;
-                text-decoration: none;
-            }
-
-                #sidebar li a:hover, #sidebar li a:focus {
-                    border-bottom: 4px solid red;
-                }
-
-        #sidebar .dropdown-menu {
-            border: 5px solid red;
-        }
-
-            #sidebar .dropdown-menu li {
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-    </style>
+    
 </head>
 <body>
 
@@ -70,10 +33,10 @@
         <div class="container-fluid">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#" style="color: red; font-weight: bold; margin: 10px; letter-spacing: 5px">Inventrii Safe</a>
+                    <a class="navbar-brand" href="#" style="color: red; font-weight: bold; margin: 10px; letter-spacing: 5px">My Inventory </a>
                 </div>
                 <ul class="nav navbar-nav " style="margin: 10px; letter-spacing: 2px">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="\Home\Index">Home</a></li>
                     <li><a href="#">Shopping Area</a></li>
                     <li><a href="#">Credit Center </a></li>
                     <li><a href="#">My Cart </a></li>
@@ -82,8 +45,8 @@
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="margin: 10px">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="\Home\Login"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="\Home\Signup"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
@@ -91,7 +54,7 @@
     @* Side Bar *@
     <div id="sidebar" class="col-lg-2 navbar-fixed-top" style="background-color: #F8F8F8; color: red;">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="color: red; font-weight: bold; margin: 10px; letter-spacing: 5px">Inventrii Safe</a>
+            <a class="navbar-brand" href="#" style="color: red; font-weight: bold; margin: 10px; letter-spacing: 5px">My Inventory</a>
         </div>
         <ul>
 
@@ -145,6 +108,7 @@
 
                 </ul>
             </div>
+
         </nav>
     </footer>
 
