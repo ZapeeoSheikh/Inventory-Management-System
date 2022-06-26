@@ -10,8 +10,6 @@ namespace Inventory_Management_System.Models
     {
         public int Id { get; set; }
         public Image Image { get; set; }
-        public virtual Items Items { get; set; }
-        public int ItemsId { get; set; }
 
     }
 }

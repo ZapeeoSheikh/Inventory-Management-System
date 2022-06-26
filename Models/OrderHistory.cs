@@ -12,8 +12,6 @@ namespace Inventory_Management_System.Models
         public int BuyerId { get; set; }
         public virtual Orders Orders { get; set; }
         public int OrdersId { get; set; }
-        public virtual Items Items { get; set; }
-        public int ItemsId { get; set; }
         public virtual OrderStatus OrderStatus { get; set; }
         public int OrderStatusId { get; set; }
 

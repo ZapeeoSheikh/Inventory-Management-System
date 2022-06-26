@@ -29,14 +29,7 @@ namespace Inventory_Management_System.Controllers
         {
             return View();
         }
-        public ActionResult OrderStatus()
-        {
-            return View();
-        }
-        public ActionResult ProductStatus()
-        {
-            return View();
-        }
+
         public ActionResult Role()
         {
             return View();

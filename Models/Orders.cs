@@ -13,7 +13,6 @@ namespace Inventory_Management_System.Models
         public int OrderStatusId { get; set; }
         public virtual User Buyer { get; set; }
         public int BuyerId { get; set; }
-        public virtual Items Items { get; set; }
         public int ItemsId { get; set; }
 
     }
