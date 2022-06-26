@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -141,13 +142,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Views\Home\OrderHistory.cshtml" />
-    <Content Include="Views\Home\View.cshtml" />
-    <Content Include="Views\Home\Role.cshtml" />
-    <Content Include="Views\Home\User.cshtml" />
-    <Content Include="Views\Home\ItemImages.cshtml" />
-    <Content Include="Views\Home\Items.cshtml" />
-    <Content Include="Views\Home\Order.cshtml" />
+    <Content Include="Views\Account\Account.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
