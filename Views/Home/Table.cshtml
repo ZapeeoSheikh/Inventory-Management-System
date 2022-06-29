@@ -1,4 +1,7 @@
 ﻿
+@using Inventory_Management_System
+@model List<Inventory_Management_System.Models.Product>
+
 @{
     ViewBag.Title = "Table";
 }
@@ -6,3 +9,32 @@
 <h2>Table</h2>
 
 
+<table class="table table-striped" id="mytbl">
+    <thead>
+    <tr>Sr No</tr>
+    <tr>Name</tr>
+    <tr>Description</tr>
+    <tr>Price</tr>
+    <tr>Quantity</tr>
+    <tr>Rating</tr>
+    </thead>
+    <tbody>
+    @foreach (var i in Model)
+    {
+        <tr>@i.Id</tr>
+        <tr>@i.Name</tr>
+        <tr>@i.desc</tr>
+        <tr>@i.price</tr>
+        <tr>@i.quantity</tr>
+        <tr>@i.rating</tr>
+    }
+    </tbody>
+    <tfoot>
+        <tr>Sr No</tr>
+        <tr>Name</tr>
+        <tr>Description</tr>
+        <tr>Price</tr>
+        <tr>Quantity</tr>
+        <tr>Rating</tr>
+    </tfoot>
+</table>
