@@ -111,6 +111,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="images\d3.png" />
+    <Content Include="images\d2.jpg" />
+    <Content Include="images\d1.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -148,7 +151,6 @@
     <Content Include="Views\Account\Account.cshtml" />
     <Content Include="Views\Account\Signup.cshtml" />
     <Content Include="Views\Account\Return.cshtml" />
-    <Content Include="Views\Home\Display.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\ProductImages.cshtml" />
@@ -157,6 +159,8 @@
     <Content Include="Views\Home\Customer.cshtml" />
     <Content Include="Views\Home\Seller.cshtml" />
     <Content Include="Views\Home\Table.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\Display.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
