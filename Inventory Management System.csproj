@@ -128,9 +128,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206291050325_test1.cs" />
-    <Compile Include="Migrations\202206291050325_test1.designer.cs">
-      <DependentUpon>202206291050325_test1.cs</DependentUpon>
+    <Compile Include="Migrations\202206291057494_test.cs" />
+    <Compile Include="Migrations\202206291057494_test.designer.cs">
+      <DependentUpon>202206291057494_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\InventoryContext.cs" />
@@ -177,8 +177,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206291050325_test1.resx">
-      <DependentUpon>202206291050325_test1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206291057494_test.resx">
+      <DependentUpon>202206291057494_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

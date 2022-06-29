@@ -1,7 +1,31 @@
-﻿
+﻿@using Inventory_Management_System
+@model List<Inventory_Management_System.Models.User>
+
 @{
     ViewBag.Title = "User";
 }
 
 <h2>User</h2>
-
+<table class="table table-striped" id="mytbl">
+    <thead>
+          <tr>Sr No</tr>
+          <tr>Name</tr>
+          <tr>Phone</tr>
+          <tr>Email</tr>
+    </thead>
+    <tbody>
+          @foreach (var i in Model)
+          {
+              <tr>@i.Id</tr>
+              <tr>@i.Name</tr>
+              <tr>@i.phone</tr>
+              <tr>@i.email</tr>
+          }
+    </tbody>
+    <tfoot>
+           <tr>Sr No</tr>
+           <tr>Name</tr>
+           <tr>Phone</tr>
+           <tr>Email</tr>
+    </tfoot>
+</table>

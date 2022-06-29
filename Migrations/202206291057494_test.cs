@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class test1 : DbMigration
+    public partial class test : DbMigration
     {
         public override void Up()
         {
@@ -17,9 +17,9 @@
                         OrderStatusId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Users", t => t.BuyerId, cascadeDelete: true)
-                .ForeignKey("dbo.Orders", t => t.OrdersId, cascadeDelete: true)
-                .ForeignKey("dbo.OrderStatus", t => t.OrderStatusId, cascadeDelete: true)
+                .ForeignKey("dbo.Users", t => t.BuyerId)
+                .ForeignKey("dbo.Orders", t => t.OrdersId)
+                .ForeignKey("dbo.OrderStatus", t => t.OrderStatusId)
                 .Index(t => t.BuyerId)
                 .Index(t => t.OrdersId)
                 .Index(t => t.OrderStatusId);
@@ -36,7 +36,7 @@
                         password = c.String(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Roles", t => t.RoleId, cascadeDelete: true)
+                .ForeignKey("dbo.Roles", t => t.RoleId)
                 .Index(t => t.RoleId);
             
             CreateTable(
@@ -58,7 +58,7 @@
                         NoOfProducts = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Users", t => t.BuyerId, cascadeDelete: true)
+                .ForeignKey("dbo.Users", t => t.BuyerId)
                 .Index(t => t.BuyerId);
             
             CreateTable(
@@ -96,7 +96,7 @@
                         ProductId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Products", t => t.ProductId, cascadeDelete: true)
+                .ForeignKey("dbo.Products", t => t.ProductId)
                 .Index(t => t.ProductId);
             
         }
