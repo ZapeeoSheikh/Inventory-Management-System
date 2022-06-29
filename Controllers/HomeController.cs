@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Inventory_Management_System.Models;
 
 namespace Inventory_Management_System.Controllers
 {
     public class HomeController : Controller
     {
+        InventoryContext db = new InventoryContext();
         // GET: Home
         public ActionResult Index()
         {
@@ -17,8 +20,10 @@ namespace Inventory_Management_System.Controllers
         {
             return View();
         }
-        public ActionResult Product()
+        public ActionResult Product(Product product)
         {
+            db.Products.Add(product);
+            db.SaveChanges();
             return View();
         }
         public ActionResult About()
@@ -47,7 +52,8 @@ namespace Inventory_Management_System.Controllers
         }
         public ActionResult Table()
         {
-            return View();
+            List<Product> products = db.Products.ToList();
+            return View(products);
         }
 
     }
