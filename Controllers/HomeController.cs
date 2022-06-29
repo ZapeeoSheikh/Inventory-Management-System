@@ -20,11 +20,14 @@ namespace Inventory_Management_System.Controllers
         {
             return View();
         }
-        public ActionResult Product(Product product)
+        public ActionResult Product(Product product, HttpPostedFileBase file)
         {
-            db.Products.Add(product);
-            db.SaveChanges();
-            return View();
+            //string filename = DateTime.UtcNow.Ticks + ".jpg";
+            //file.SaveAs(Server.MapPath("~/productImage/") + filename);
+            //product.Image = filename;
+            //db.Products.Add(product);
+            //db.SaveChanges();
+            return Redirect("/Home/Table");
         }
         public ActionResult About()
         {
@@ -36,7 +39,8 @@ namespace Inventory_Management_System.Controllers
         }
         public ActionResult User()
         {
-            return View();
+            List<User> users = db.Users.ToList();
+            return View(users);
         }
         public ActionResult Form()
         {

@@ -9,7 +9,7 @@ namespace Inventory_Management_System.Models
     public class Product
     {
         public int Id { get; set; }
-        public Image Image { get; set; }
+        public string Image { get; set; }
         public string Name { get; set; }
         public string desc { get; set; }
         public int price { get; set; }
