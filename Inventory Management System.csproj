@@ -128,7 +128,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ItemImages.cs" />
+    <Compile Include="Migrations\202206291050325_test1.cs" />
+    <Compile Include="Migrations\202206291050325_test1.designer.cs">
+      <DependentUpon>202206291050325_test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\InventoryContext.cs" />
     <Compile Include="Models\OrderHistory.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\OrderStatus.cs" />
@@ -170,6 +175,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202206291050325_test1.resx">
+      <DependentUpon>202206291050325_test1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
