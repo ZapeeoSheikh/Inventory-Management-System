@@ -50,11 +50,13 @@ namespace Inventory_Management_System.Controllers
         }
         public ActionResult Customer()
         {
-            return View();
+            List<User> customers = db.Users.Where(x => x.RoleId == 2).ToList();
+            return View(customers);
         }
         public ActionResult Seller()
         {
-            return View();
+            List<User> sellers = db.Users.Where(x => x.RoleId == 3).ToList();
+            return View(sellers);
         }
         public ActionResult Table()
         {
