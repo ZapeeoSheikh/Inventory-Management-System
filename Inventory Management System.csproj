@@ -119,6 +119,7 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Style.css" />
+    <Content Include="style2.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
