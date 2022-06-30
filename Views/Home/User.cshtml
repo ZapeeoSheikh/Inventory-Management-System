@@ -5,27 +5,39 @@
     ViewBag.Title = "User";
 }
 
-<h2>User</h2>
+<h2 style="color: red; display: flex; justify-content: center; margin-bottom: 30px;">Active Users </h2>
+
+
 <table class="table table-striped" id="mytbl">
     <thead>
-          <tr>Sr No</tr>
-          <tr>Name</tr>
-          <tr>Phone</tr>
-          <tr>Email</tr>
+    <tr>
+        <th>User</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Role</th>
+    </tr>
     </thead>
     <tbody>
-          @foreach (var i in Model)
-          {
-              <tr>@i.Id</tr>
-              <tr>@i.Name</tr>
-              <tr>@i.phone</tr>
-              <tr>@i.email</tr>
-          }
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td><i class='fas fa-user-check'></i></td>
+            <td>@i.Name</td>
+            <td>@i.phone</td>
+            <td>@i.email</td>
+            <td>@i.Role.Title</td>
+
+        </tr>
+    }
     </tbody>
     <tfoot>
-           <tr>Sr No</tr>
-           <tr>Name</tr>
-           <tr>Phone</tr>
-           <tr>Email</tr>
+        <tr>
+            <th>User</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
     </tfoot>
 </table>

@@ -16,17 +16,19 @@ namespace Inventory_Management_System.Controllers
         {
             return View();
         }
-        public ActionResult Display()
+        public ActionResult Display(Product product)
         {
-            return View();
+            List<Product> products = db.Products.ToList();
+            return View(products);
         }
-        public ActionResult Product(Product product, HttpPostedFileBase file)
+        [HttpPost]
+        public ActionResult Product(Product product)
         {
             //string filename = DateTime.UtcNow.Ticks + ".jpg";
             //file.SaveAs(Server.MapPath("~/productImage/") + filename);
             //product.Image = filename;
-            //db.Products.Add(product);
-            //db.SaveChanges();
+            db.Products.Add(product);
+            db.SaveChanges();
             return Redirect("/Home/Table");
         }
         public ActionResult About()

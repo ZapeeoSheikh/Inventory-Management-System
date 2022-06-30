@@ -1,40 +1,44 @@
-﻿
-@using Inventory_Management_System
-@model List<Inventory_Management_System.Models.Product>
+﻿@model List<Inventory_Management_System.Models.Product>
 
 @{
     ViewBag.Title = "Table";
 }
 
-<h2>Table</h2>
+<h2 style="color: red; display: flex; justify-content: center; margin-bottom: 30px;">Active Products </h2>
 
 
 <table class="table table-striped" id="mytbl">
     <thead>
-    <tr>Sr No</tr>
-    <tr>Name</tr>
-    <tr>Description</tr>
-    <tr>Price</tr>
-    <tr>Quantity</tr>
-    <tr>Rating</tr>
+         <tr>
+             <th>Product</th>
+             <th>Name</th>
+             <th>Description</th>
+             <th>Price</th>
+             <th>Quantity</th>
+             <th>Rating</th>
+         </tr>
     </thead>
     <tbody>
-    @foreach (var i in Model)
-    {
-        <tr>@i.Id</tr>
-        <tr>@i.Name</tr>
-        <tr>@i.desc</tr>
-        <tr>@i.price</tr>
-        <tr>@i.quantity</tr>
-        <tr>@i.rating</tr>
-    }
+         @foreach (var i in Model)
+         {
+             <tr>
+                 <td><i class='fas fa-box-open'></i></td>
+                 <td>@i.Name</td>
+                 <td>@i.desc</td>
+                 <td>@i.price</td>
+                 <td>@i.quantity</td>
+                 <td>@i.rating</td>
+             </tr>
+         }
     </tbody>
     <tfoot>
-        <tr>Sr No</tr>
-        <tr>Name</tr>
-        <tr>Description</tr>
-        <tr>Price</tr>
-        <tr>Quantity</tr>
-        <tr>Rating</tr>
+        <tr>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Rating</th>
+        </tr>
     </tfoot>
 </table>
