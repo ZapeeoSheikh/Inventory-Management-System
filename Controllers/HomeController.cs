@@ -14,6 +14,7 @@ namespace Inventory_Management_System.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.name = "Muhammad Rameez";
             return View();
         }
         public ActionResult Display(Product product)
