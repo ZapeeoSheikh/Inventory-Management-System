@@ -10,7 +10,7 @@ namespace Inventory_Management_System.Controllers
     public class AccountController : Controller
     {
         InventoryContext db = new InventoryContext();
-        // GET: Account
+
         public ActionResult Account()
         {
             return View();
