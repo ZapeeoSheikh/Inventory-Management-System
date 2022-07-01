@@ -52,6 +52,7 @@ namespace Inventory_Management_System.Controllers
         [HttpPost]
         public ActionResult Signup(User user)
         {
+            user.RoleId = 2;
             user.AccessToken = DateTime.UtcNow.Ticks.ToString();
             db.Users.Add(user);
             db.SaveChanges();
