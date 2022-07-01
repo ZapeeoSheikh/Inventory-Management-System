@@ -137,6 +137,10 @@
     <Compile Include="Migrations\202206301847560_t1.designer.cs">
       <DependentUpon>202206301847560_t1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207011336147_t2.cs" />
+    <Compile Include="Migrations\202207011336147_t2.designer.cs">
+      <DependentUpon>202207011336147_t2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\InventoryContext.cs" />
     <Compile Include="Models\OrderHistory.cs" />
@@ -188,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206301847560_t1.resx">
       <DependentUpon>202206301847560_t1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207011336147_t2.resx">
+      <DependentUpon>202207011336147_t2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
