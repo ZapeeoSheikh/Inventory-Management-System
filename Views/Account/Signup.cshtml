@@ -13,16 +13,16 @@
 <body>
 <div class="container" id="container">
     <div class="form-container log-in-container">
-        <form action="\Account\Login">
+        <form action="/Account/Signup" method="post">
             <h1 style="margin-bottom: 20px;">Signup</h1>
             @*<div class="social-container">
                 <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
                 <a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
             </div>*@
             @*<span>or use your account</span>*@
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Phone No" />
+            <input type="text" placeholder="Name" name=""/>
+            <input type="email" placeholder="Email" name=""/>
+            <input type="text" placeholder="Phone No" name=""/>
             <input type="password" placeholder="Password" />
             
             <button type="submit" style="margin-top: 20px">Sign up</button>

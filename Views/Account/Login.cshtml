@@ -14,17 +14,21 @@
 <body>
 <div class="container" id="container">
     <div class="form-container log-in-container">
-        <form action="\Home\Index">
+        <form action="/Account/Login" method="post">
             <h1>Login</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
                 <a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
             </div>
             <span>or use your account</span>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input type="email" placeholder="Email" name="email" />
+            <input type="password" placeholder="Password" name="password"/>
+            @if (ViewBag.Error != "")
+            {
+                <p style="color: red">@ViewBag.Error</p>
+            }
             <a href="#">Forgot your password?</a>
-            <button>Log In</button>
+            <button type="submit">Log In</button>
             <a href="\Account\Signup" style="font-size: 10px; font-weight: 400; text-decoration: underline; color: #FF4B2B">Sign up here</a>
         </form>
     </div>
