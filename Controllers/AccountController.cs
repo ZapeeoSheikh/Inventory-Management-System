@@ -62,7 +62,7 @@ namespace Inventory_Management_System.Controllers
             myCookie.Expires = DateTime.UtcNow.AddDays(5).AddHours(5);
             Response.Cookies.Remove("userCookie");
             Response.Cookies.Add(myCookie);
-            return Redirect("/Product/Login");
+            return Redirect("/Account/Login");
         }
         public ActionResult Return()
         {
