@@ -1,7 +1,9 @@
-﻿@using Inventory_Management_System
-@model List<Inventory_Management_System.Models.User>
+﻿@using Inventory_Management_System.Models
+
 @{
     Layout = null;
+    List<User> users = ViewBag.User as List<User>;
+
 }
 
 <!DOCTYPE html>
@@ -21,12 +23,11 @@
             <input type="email" placeholder="Email" name="email" />
             <input type="text" placeholder="Phone No" name="phone" />
             <div class="form-group">
-                <label for="ps">Product Status Id:</label>
-                <select name="ProductStatusId" class="form-control">
-                    <option value="@Model.UserId">@Model.ProductStatus.Name</option>
-                    @foreach (var item in productStatuses)
+                <label for="ps">Role :</label>
+                <select name="RoleId" class="form-control">
+                    @foreach (var i in users)
                     {
-                        <option value="@item.Id"> @item.Name</option>
+                        <option value="@i.RoleId"> @i.Role.Title</option>
                     }
 
                 </select>
