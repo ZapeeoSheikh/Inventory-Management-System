@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Inventory_Management_System
+@model List<Inventory_Management_System.Models.User>
+@{
     Layout = null;
 }
 
@@ -15,16 +17,22 @@
     <div class="form-container log-in-container">
         <form action="/Account/Signup" method="post">
             <h1 style="margin-bottom: 20px;">Signup</h1>
-            @*<div class="social-container">
-                <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
-                <a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
-            </div>*@
-            @*<span>or use your account</span>*@
-            <input type="text" placeholder="Name" name="Name"/>
-            <input type="email" placeholder="Email" name="email"/>
-            <input type="text" placeholder="Phone No" name="phone"/>
-            <input type="password" placeholder="Password" name="password"/>
-            
+            <input type="text" placeholder="Name" name="Name" />
+            <input type="email" placeholder="Email" name="email" />
+            <input type="text" placeholder="Phone No" name="phone" />
+            <div class="form-group">
+                <label for="ps">Product Status Id:</label>
+                <select name="ProductStatusId" class="form-control">
+                    <option value="@Model.UserId">@Model.ProductStatus.Name</option>
+                    @foreach (var item in productStatuses)
+                    {
+                        <option value="@item.Id"> @item.Name</option>
+                    }
+
+                </select>
+            </div>
+            <input type="password" placeholder="Password" name="password" />
+
             <button type="submit" style="margin-top: 20px">Sign up</button>
             <a href="\Account\Login" style="font-size: 10px; font-weight: 400; text-decoration: underline; color: #FF4B2B">Login here</a>
         </form>
