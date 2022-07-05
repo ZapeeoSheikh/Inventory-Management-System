@@ -1,5 +1,5 @@
 # Inventory-Management-System
-DBMS Project
+Database Management Project
 
 # Day 01 Done with dashboard 
 ![image](https://user-images.githubusercontent.com/77886136/168448782-afeb4236-11b0-4eb7-92ac-9cc0448e4fca.png)
